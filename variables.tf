@@ -8,12 +8,10 @@ variable "environment" {
 }
 
 variable "region" {
-  default     = "us-east-1"
   description = "The AWS region to launch in"
 }
 
 variable "availability_zones" {
-  default     = "us-east-1a,us-east-1c,us-east-1d"
   description = "The AWS availability zones to use"
 }
 

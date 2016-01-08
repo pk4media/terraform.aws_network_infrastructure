@@ -8,7 +8,7 @@ module "vpc" {
 }
 
 module "public_subnets" {
-  source      = "github.com/pk4media/terraform.aws_public_subnets"
+  source      = "github.com/pk4media/terraform.aws_public_subnet"
 
   name        = "${var.name}-public"
   environment = "${var.environment}"
@@ -56,7 +56,7 @@ module "nat" {
 }
 
 module "private_subnets" {
-  source      = "github.com/pk4media/terraform.aws_private_subnets"
+  source      = "github.com/pk4media/terraform.aws_private_subnet"
 
   name        = "${var.name}-private"
   environment = "${var.environment}"
@@ -69,7 +69,7 @@ module "private_subnets" {
 }
 
 module "ephemeral_subnets" {
-  source      = "github.com/pk4media/terraform.aws_private_subnets"
+  source      = "github.com/pk4media/terraform.aws_private_subnet"
 
   name        = "${var.name}-ephemeral"
   environment = "${var.environment}"

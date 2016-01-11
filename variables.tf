@@ -41,10 +41,3 @@ variable "bastion_ec2_key_name" {
 variable "bastion_ec2_key" {
   description = "The contents of the private key for connection to bastion"
 }
-
-variable "ec2_key_name" {
-  description = "The EC2 Key to use for launching instances"
-}
-variable "ec2_key" {
-  description = "The contents of the private EC2 key"
-}

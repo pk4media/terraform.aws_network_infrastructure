@@ -28,7 +28,7 @@ output "ephemeral_subnet_cidrs" {
 }
 
 output "bastion_host" {
-  value = "${module.bastion.private_ip}"
+  value = "${module.bastion.public_ip}"
 }
 output "bastion_user" {
   value = "${module.bastion.user}"
